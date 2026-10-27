@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowFix Plumbing & HVAC | 24/7 Emergency Services South Africa</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        },
+                        emergency: {
+                            600: '#dc2626',
+                            700: '#b91c1c'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Smooth scrolling with ample offset for sticky header */
+        section, div[id] {
+            scroll-margin-top: 110px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased pb-20 md:pb-0">
+
+    <!-- Top Emergency Announcement Bar -->
+    <div class="bg-emergency-600 text-white text-xs sm:text-sm font-semibold py-2 px-4 text-center flex items-center justify-center gap-2 shadow-inner">
+        <i class="fa-solid fa-triangle-exclamation animate-pulse"></i>
+        <span>24/7 Emergency Dispatch across Centurion, Midrand, Pretoria & Johannesburg!</span>
+        <a href="tel:0825550192" class="underline hover:text-slate-100 ml-2 font-bold bg-white/20 px-2 py-0.5 rounded">Call 082 555 0192</a>
+    </div>
+
+    <!-- Main Sticky Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="bg-brand-600 text-white p-2.5 rounded-xl shadow-lg">
+                    <i class="fa-solid fa-screwdriver-wrench text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-black tracking-tight text-slate-900">FlowFix</span>
+                    <span class="block text-xs font-bold text-brand-600 tracking-widest uppercase">Plumbing & HVAC SA</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                <a href="#services" class="hover:text-brand-600 transition">Services</a>
+                <a href="#estimator" class="hover:text-brand-600 transition">Quote Estimator</a>
+                <a href="#reviews" class="hover:text-brand-600 transition">Reviews</a>
+                <a href="#areas" class="hover:text-brand-600 transition">Service Areas</a>
+                <a href="#contact" class="hover:text-brand-600 transition">Contact</a>
+            </nav>
+
+            <!-- Desktop CTA -->
+            <div class="hidden lg:flex items-center gap-4">
+                <div class="text-right">
+                    <span class="block text-xs text-slate-400 font-semibold uppercase tracking-wider">Emergency Line</span>
+                    <a href="tel:0825550192" class="text-lg font-black text-slate-900 hover:text-brand-600">+27 82 555 0192</a>
+                </div>
+                <a href="#booking-form" class="bg-emergency-600 hover:bg-emergency-700 text-white font-bold px-5 py-3 rounded-xl shadow-lg hover:shadow-xl transition flex items-center gap-2">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Dispatch Tech</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-brand-600 focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-4 shadow-xl">
+            <div class="flex flex-col gap-4 font-semibold text-slate-700">
+                <a href="#services" class="mobile-link hover:text-brand-600">Services</a>
+                <a href="#estimator" class="mobile-link hover:text-brand-600">Quote Estimator</a>
+                <a href="#reviews" class="mobile-link hover:text-brand-600">Reviews</a>
+                <a href="#areas" class="mobile-link hover:text-brand-600">Service Areas</a>
+                <a href="#contact" class="mobile-link hover:text-brand-600">Contact</a>
+                <a href="tel:0825550192" class="bg-emergency-600 text-white text-center py-3 rounded-xl font-bold shadow-md flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone-volume"></i> Call 082 555 0192
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-slate-900 text-white overflow-hidden py-16 lg:py-24">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 opacity-30 mix-blend-overlay">
+            <img src="https://images.unsplash.com/photo-1542013936693-89423b036dd0?auto=format&fit=crop&w=1920&q=80" alt="Plumbing and HVAC Professional" class="w-full h-full object-cover">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Hero Text Content -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 bg-brand-600/30 border border-brand-500/50 text-brand-300 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    Licensed & SANS Compliant SA Technicians
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                    Emergency Plumbing & <span class="text-brand-400">HVAC Repairs</span> in Gauteng
+                </h1>
+                <p class="text-lg text-slate-300 max-w-xl">
+                    Burst geysers, leaking pipes, aircon breakdowns, and emergency drain unblocking. Rapid 30-minute dispatch across Centurion, Pretoria, and Johannesburg.
+                </p>
+
+                <!-- Trust Badges -->
+                <div class="grid grid-cols-3 gap-4 pt-2 border-t border-slate-800">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-brand-600/20 p-2.5 rounded-lg text-brand-400"><i class="fa-solid fa-clock text-lg"></i></div>
+                        <div><div class="font-bold text-sm">30-Min</div><div class="text-xs text-slate-400">Response</div></div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="bg-brand-600/20 p-2.5 rounded-lg text-brand-400"><i class="fa-solid fa-shield-halved text-lg"></i></div>
+                        <div><div class="font-bold text-sm">100%</div><div class="text-xs text-slate-400">Insured & Licensed</div></div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="bg-brand-600/20 p-2.5 rounded-lg text-brand-400"><i class="fa-solid fa-award text-lg"></i></div>
+                        <div><div class="font-bold text-sm">SANS</div><div class="text-xs text-slate-400">Standards</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instant Service Request Card -->
+            <div id="booking-form" class="lg:col-span-5 bg-white text-slate-800 p-6 sm:p-8 rounded-3xl shadow-2xl border border-slate-100">
+                <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
+                    <h3 class="text-xl font-black text-slate-900">Book Urgent Dispatch</h3>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-full">Teams On Standby</span>
+                </div>
+                <form id="hero-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-600 uppercase mb-1">Your Full Name</label>
+                        <input type="text" required placeholder="e.g. Johan van der Merwe" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-500 focus:outline-none text-sm">
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 uppercase mb-1">Phone Number</label>
+                            <input type="tel" required placeholder="082 123 4567" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-500 focus:outline-none text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 uppercase mb-1">Suburb / Area</label>
+                            <input type="text" required placeholder="e.g. Rooihuiskraal" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-500 focus:outline-none text-sm">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-600 uppercase mb-1">Select Issue</label>
+                        <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-500 focus:outline-none text-sm bg-white">
+                            <option>Burst Geyser / Water Heater Failure</option>
+                            <option>Burst Pipe / Major Water Leak</option>
+                            <option>Air Conditioning Repair / Servicing</option>
+                            <option>Blocked Drain / CCTV Inspection</option>
+                            <option>Emergency Gas Leak Check</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Dispatch Technician Now</span>
+                    </button>
+                    <p id="form-success" class="hidden text-center text-emerald-600 font-bold text-sm mt-2">Request received! A plumber is calling you back in 2 minutes.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-brand-600 font-bold uppercase tracking-widest text-xs">Expert Solutions</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Professional Plumbing & HVAC Services</h2>
+            <p class="text-slate-600 mt-3">From domestic geysers to commercial cooling systems, our certified technicians deliver top-tier workmanship across Gauteng.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-slate-100 flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Burst Geyser Repair" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">24/7 Emergency</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Burst Geysers & Replacements</h3>
+                        <p class="text-slate-600 text-sm mb-4">Urgent geyser failure handling, safety valve checks, water damage control, and full SANS-compliant replacements with warranty.</p>
+                    </div>
+                    <a href="#booking-form" class="text-brand-600 font-bold text-sm flex items-center gap-1 hover:text-brand-700">Request Service <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-slate-100 flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" alt="Solar and Electric Water Heaters" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Solar & Electric</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Electric & Solar Water Heaters</h3>
+                        <p class="text-slate-600 text-sm mb-4">Specialized repair for domestic electric geysers and solar water heating loops, collector panels, pumps, and thermostats.</p>
+                    </div>
+                    <a href="#booking-form" class="text-brand-600 font-bold text-sm flex items-center gap-1 hover:text-brand-700">Request Service <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-slate-100 flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Burst Pipes and Leak Detection" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Leak Detection</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Burst Pipes & Leak Detection</h3>
+                        <p class="text-slate-600 text-sm mb-4">Acoustic and electronic underground leak detection, immediate pipe sealing, and professional trenching or re-piping.</p>
+                    </div>
+                    <a href="#booking-form" class="text-brand-600 font-bold text-sm flex items-center gap-1 hover:text-brand-700">Request Service <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-slate-100 flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80" alt="HVAC and Aircon Maintenance" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">HVAC Cooling</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">HVAC & Aircon Maintenance</h3>
+                        <p class="text-slate-600 text-sm mb-4">Rapid cooling restoration for residential and commercial air conditioning units during intense South African summer heatwaves.</p>
+                    </div>
+                    <a href="#booking-form" class="text-brand-600 font-bold text-sm flex items-center gap-1 hover:text-brand-700">Request Service <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-slate-100 flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1585338107529-13afc5f02c86?auto=format&fit=crop&w=800&q=80" alt="Drain Cleaning and CCTV" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">CCTV Inspection</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Drain Clearing & CCTV Inspections</h3>
+                        <p class="text-slate-600 text-sm mb-4">High-pressure drain unblocking and advanced CCTV camera scoping to pinpoint root intrusion or collapsed sewer lines.</p>
+                    </div>
+                    <a href="#booking-form" class="text-brand-600 font-bold text-sm flex items-center gap-1 hover:text-brand-700">Request Service <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-slate-100 flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80" alt="Emergency Gas Checks" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Certified Safe</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Emergency Gas Inspections</h3>
+                        <p class="text-slate-600 text-sm mb-4">Certified LP and natural gas safety check, pressure testing, and urgent leak mitigation for stoves and gas water heaters.</p>
+                    </div>
+                    <a href="#booking-form" class="text-brand-600 font-bold text-sm flex items-center gap-1 hover:text-brand-700">Request Service <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Instant Quote Estimator -->
+    <section id="estimator" class="bg-slate-900 text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-400 font-bold uppercase tracking-widest text-xs">Transparent Pricing</span>
+                <h2 class="text-3xl sm:text-4xl font-black mt-2">Instant Service Cost Estimator</h2>
+                <p class="text-slate-300 mt-2">Select your issue below for an instant estimated cost range in South African Rand (ZAR).</p>
+            </div>
+
+            <div class="bg-white text-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Select Service Category</label>
+                        <select id="calc-service" onchange="calculateEstimate()" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 font-medium focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                            <option value="geyser">Burst Geyser Replacement (150L / 200L)</option>
+                            <option value="pipe">Burst Pipe & Leak Repair</option>
+                            <option value="drain">Blocked Drain Unblocking</option>
+                            <option value="aircon">Air Conditioner Servicing & Gas Top-up</option>
+                            <option value="gas">Emergency Gas Leak Inspection</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Urgency Level</label>
+                        <select id="calc-urgency" onchange="calculateEstimate()" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 font-medium focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                            <option value="standard">Standard Booking (Business Hours)</option>
+                            <option value="emergency">Immediate Emergency Dispatch (24/7)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Result Box -->
+                <div class="bg-brand-50 border border-brand-200 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Estimated Price Range</span>
+                        <div id="price-output" class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">R 2,500 – R 4,800</div>
+                        <p class="text-xs text-slate-500 mt-1">*Includes call-out fee, standard labor, and certified parts. Final quote confirmed on site.</p>
+                    </div>
+                    <a href="#booking-form" class="bg-brand-600 hover:bg-brand-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition whitespace-nowrap">
+                        Book at This Rate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-brand-600 font-bold uppercase tracking-widest text-xs">Verified Feedback</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Trusted by Homeowners Across Gauteng</h2>
+            <p class="text-slate-600 mt-3">Read what our clients in Centurion, Pretoria, and Midrand have to say about our emergency response.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Review 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-700 italic mb-6">"Our geyser burst at 2 AM in Rooihuiskraal. FlowFix had a technician at our door within 35 minutes and replaced the tank before breakfast. Absolute lifesavers!"</p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                    <div class="w-10 h-10 bg-brand-100 text-brand-700 font-bold rounded-full flex items-center justify-center">JV</div>
+                    <div>
+                        <div class="font-bold text-slate-900">Jan van der Merwe</div>
+                        <div class="text-xs text-slate-500">Rooihuiskraal, Centurion</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-700 italic mb-6">"Professional and transparent pricing. No hidden call-out surprises. They fixed our main water leak quickly and even gave us a SANS compliance certificate."</p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                    <div class="w-10 h-10 bg-brand-100 text-brand-700 font-bold rounded-full flex items-center justify-center">SN</div>
+                    <div>
+                        <div class="font-bold text-slate-900">Sipho Ndlovu</div>
+                        <div class="text-xs text-slate-500">Midrand</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-700 italic mb-6">"The aircon unit in our office stopped cooling right during a heatwave. FlowFix serviced and regassed it within 2 hours of calling. Highly recommended!"</p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                    <div class="w-10 h-10 bg-brand-100 text-brand-700 font-bold rounded-full flex items-center justify-center">CL</div>
+                    <div>
+                        <div class="font-bold text-slate-900">Chantal Louw</div>
+                        <div class="text-xs text-slate-500">Pretoria East</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Service Area Breakdown -->
+    <section id="areas" class="bg-slate-100 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold uppercase tracking-widest text-xs">Coverage Map</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Rapid Response Across Gauteng</h2>
+                <p class="text-slate-600 mt-3">Our mobile emergency units are stationed across key metropolitan nodes to guarantee fast arrival times.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Area 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-brand-600 font-black text-lg mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot"></i> Centurion
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Rooihuiskraal, Wierdapark, Clubview, Irene, Lyttelton, Eldoraigne.</p>
+                    <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Avg Response: 25 Mins</span>
+                </div>
+
+                <!-- Area 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-brand-600 font-black text-lg mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot"></i> Pretoria
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Pretoria East, Menlo Park, Brooklyn, Hatfield, Garsfontein, Centurion.</p>
+                    <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Avg Response: 30 Mins</span>
+                </div>
+
+                <!-- Area 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-brand-600 font-black text-lg mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot"></i> Midrand
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Waterfall, Kyalami, Noordwyk, Halfway House, Carlswald.</p>
+                    <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Avg Response: 30 Mins</span>
+                </div>
+
+                <!-- Area 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="text-brand-600 font-black text-lg mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot"></i> Johannesburg North
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Sandton, Fourways, Randburg, Bryanston, Rosebank.</p>
+                    <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Avg Response: 35 Mins</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Contact Section -->
+    <footer id="contact" class="bg-slate-900 text-white pt-16 pb-24 md:pb-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-brand-600 text-white p-2 rounded-xl">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <span class="text-xl font-black">FlowFix Plumbing & HVAC</span>
+                </div>
+                <p class="text-slate-400 text-sm mb-4">
+                    Your premier 24/7 emergency plumbing and heating, ventilation, and air conditioning specialists across Gauteng, South Africa.
+                </p>
+                <div class="text-slate-300 text-sm font-semibold">
+                    Emergency Hotline: <a href="tel:0825550192" class="text-brand-400 hover:underline">082 555 0192</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-4 border-b border-slate-800 pb-2">Quick Links</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="#services" class="hover:text-white transition">Burst Geyser Replacements</a></li>
+                    <li><a href="#services" class="hover:text-white transition">Electric & Solar Water Heaters</a></li>
+                    <li><a href="#services" class="hover:text-white transition">HVAC & Aircon Servicing</a></li>
+                    <li><a href="#estimator" class="hover:text-white transition">Instant Quote Calculator</a></li>
+                    <li><a href="#areas" class="hover:text-white transition">Service Coverage Map</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-4 border-b border-slate-800 pb-2">Business Hours</h4>
+                <p class="text-slate-400 text-sm mb-2"><strong class="text-white">Emergency Dispatch:</strong> 24 Hours / 7 Days a Week</p>
+                <p class="text-slate-400 text-sm mb-4"><strong class="text-white">Standard Bookings:</strong> Mon - Sat: 07:00 - 18:00</p>
+                <div class="flex gap-3 text-slate-400">
+                    <a href="#" class="w-10 h-10 bg-slate-800 hover:bg-brand-600 hover:text-white rounded-xl flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 bg-slate-800 hover:bg-brand-600 hover:text-white rounded-xl flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="w-10 h-10 bg-slate-800 hover:bg-brand-600 hover:text-white rounded-xl flex items-center justify-center transition"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+            &copy; 2026 FlowFix Plumbing & HVAC South Africa. All rights reserved. SANS Compliant & Licensed Technicians.
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Header -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 px-4 py-3 flex items-center justify-between shadow-2xl">
+        <div class="flex items-center gap-2">
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+            </span>
+            <span class="text-xs font-bold text-white tracking-wide uppercase">Emergency Dispatch</span>
+        </div>
+        <a href="tel:0825550192" class="bg-emergency-600 hover:bg-emergency-700 text-white font-black px-5 py-2.5 rounded-xl shadow-lg flex items-center gap-2 text-sm">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>Call Now (24/7)</span>
+        </a>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form Submission Simulation
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const successMsg = document.getElementById('form-success');
+            successMsg.classList.remove('hidden');
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+                e.target.reset();
+            }, 5000);
+        }
+
+        // Instant Quote Calculator
+        function calculateEstimate() {
+            const service = document.getElementById('calc-service').value;
+            const urgency = document.getElementById('calc-urgency').value;
+            const output = document.getElementById('price-output');
+
+            let baseMin = 1500;
+            let baseMax = 3000;
+
+            if (service === 'geyser') {
+                baseMin = 4500;
+                baseMax = 8500;
+            } else if (service === 'pipe') {
+                baseMin = 1800;
+                baseMax = 3500;
+            } else if (service === 'drain') {
+                baseMin = 1200;
+                baseMax = 2500;
+            } else if (service === 'aircon') {
+                baseMin = 1500;
+                baseMax = 3200;
+            } else if (service === 'gas') {
+                baseMin = 1100;
+                baseMax = 2200;
+            }
+
+            if (urgency === 'emergency') {
+                baseMin += 800;
+                baseMax += 1500;
+            }
+
+            output.textContent = `R ${baseMin.toLocaleString()} – R ${baseMax.toLocaleString()}`;
+        }
+    </script>
+</body>
+</html>
